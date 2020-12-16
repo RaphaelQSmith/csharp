@@ -6,8 +6,11 @@ namespace myApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("The current time is: " + DateTime.Now);
+            Console.Title = "My first C# program";
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Hello, whats your name?");
+            String name = Console.ReadLine();
+            Console.WriteLine(name);
             Console.ReadKey();
         }
     }
